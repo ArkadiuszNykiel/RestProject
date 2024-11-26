@@ -1,73 +1,31 @@
-/* Countries.css */
-/* Main container */
-.countries-container {
-    display: flex;
-    background-color: #f5f5f5;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-/* Left column: search and list */
-.countries-list-container {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.countries-list-container h1 {
-    margin-bottom: 20px;
-}
-
-.countries-list-container input,
-.countries-list-container button,
-.countries-list-container select {
-    margin-bottom: 10px;
-    padding: 5px;
-    width: 100%;
-}
-
+/* Remove dots from the list */
 .countries-list {
     list-style-type: none;
-    padding-left: 0;
+    padding: 0;
 }
 
-/* Country list item */
+/* Style for individual country items */
 .countries-list-item {
-    cursor: pointer;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
+/* Add hover effect with drop shadow */
 .countries-list-item:hover {
-    background-color: #e6e6e6;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #e6e6e6;
 }
 
-/* Flag next to country name */
+/* Align flag and name */
 .country-flag {
-    width: 40px;
-    height: auto;
-    border-radius: 3px;
-}
-
-/* Right column: selected country details */
-.selected-country {
-    flex: 1;
-    border-left: 1px solid #ccc;
-    padding-left: 20px;
-}
-
-.selected-country img {
-    width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.selected-country p {
-    margin-bottom: 10px;
+    max-width: 50px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
